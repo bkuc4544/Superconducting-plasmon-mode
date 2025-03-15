@@ -28,13 +28,7 @@ RH=1i*k.^2./(g*kc);
 plot(abs(g),real(RH),'b',abs(g),real(LH),'r',...
     abs(g),imag(RH),'k--',abs(g),imag(LH),'r--');
 
-
-
 % 9.0725 +19.7124i
-
-
-
-
 
 f = @(g) abs(besselh(0,1,((g(1)+1i*g(2))*a))./besselh(1,1,(g(1)+1i*g(2))*a)-1i*k.^2./((g(1)+1i*g(2))*kc));  % The parameterized function.
                         % The parameter.
@@ -64,17 +58,3 @@ xlabel('Distance (cm)')
 ylabel('Normalized Transverse Field')
 title([num2str(fv(N)/10^9) ' GHz Single Wire Radius ' num2str(a*100) 'cm'])
 xlim([0 max(r)*100])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
